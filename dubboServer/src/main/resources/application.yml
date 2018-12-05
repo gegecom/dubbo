@@ -1,0 +1,41 @@
+server:
+  port: 8081
+
+spring:
+  dubbo:
+    application:
+      name: provider
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      port: 20880
+    scan: com.dubbo.server.service
+
+#  spring.dubbo.application.id=live-dubbo-provider
+#  spring.dubbo.application.name=live-dubbo-provider
+#  spring.dubbo.registry.address=zookeeper://127.0.0.1:2181
+#  spring.dubbo.server=true
+#  spring.dubbo.protocol.name=dubbo
+#  spring.dubbo.protocol.port=20880
+
+#    driver-class-name:  com.mysql.cj.jdbc.Driver
+#    username: dbgril
+#    password: 123456
+#    url: jdbc:mysql://127.0.0.1:3306/dbgril?useSSL=false&serverTimezone=Hongkong&characterEncoding=utf-8&autoReconnect=true
+#    druid:
+#      initial-size: 1
+#      min-idle: 1
+#      max-active: 20
+#      test-on-borrow: true
+#      stat-view-servlet:
+#        allow: true
+
+#mybatis:
+#  type-aliases-package: com.example.demo.pojo
+#  mapper-locations: classpath:mapper/*.xml
+
+#mapper:
+#  mappers: com.example.demo.utils.MyMapper
+#  not-empty: false
+#  identity: MYSQL
