@@ -25,6 +25,7 @@
     </properties>
     <modules>
         <module>dubboServer</module>
+        <module>dubboConsumer</module>
     </modules>
     <dependencies>
         <dependency>
