@@ -1,6 +1,6 @@
 package com.dubbo.consumer.controller;
 
-import com.dubbo.consumer.service.UserConsumerService;
+import com.dubbo.api.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class userConsumerController {
     @Autowired
-    UserConsumerService userConsumerService;
+    UserService userService;
     @RequestMapping("/getConsumerUserName")
     public String getUserName(){
-        return  userConsumerService.getUserName();
+        return  userService.getUserName();
     }
 
 }

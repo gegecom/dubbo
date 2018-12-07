@@ -1,16 +1,21 @@
 server:
   port: 8081
 
-spring:
-  dubbo:
-    application:
-      name: provider
-    registry:
-      address: zookeeper://127.0.0.1:2181
-    protocol:
-      name: dubbo
-      port: 20880
-    scan: com.dubbo.server.service
+#spring:
+#  dubbo:
+#    application:
+#      name: dubbo-provider
+#      id: dubbo-provider
+#    registry:
+#      address: zookeeper://127.0.0.1:2181
+##    server: true
+##    service:
+##      interface: com.dubbo.api.service.UserService
+##      ref: userService
+#    protocol:
+#      name: dubbo
+#      port: 20880
+#    scan: com.dubbo.server.service
 
 #  spring.dubbo.application.id=live-dubbo-provider
 #  spring.dubbo.application.name=live-dubbo-provider

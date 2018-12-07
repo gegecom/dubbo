@@ -1,4 +1,4 @@
-package com.dubbo.consumer.service;
+package com.dubbo.api.service;
 
 public interface UserService {
 
