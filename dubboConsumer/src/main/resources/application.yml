@@ -1,13 +1,15 @@
 server:
   port: 8082
 
-spring:
-  dubbo:
-    application:
-      name: consumer
-    protocol:
-      port: 20800
-      name: dubbo
-    registry:
-      address:zookeeper: //127.0.0.1:2181
-    scan: com.dubbo.consumer.service
+#spring:
+#  dubbo:
+#    application:
+#      name: dubbo-consumer
+#    protocol:
+#      port: 20800
+#      name: dubbo
+#    registry:
+#      address: zookeeper://127.0.0.1:2181
+#    scan:
+#      base: com.dubbo.consumer.controller
+#    reference:

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @EnableDubboConfig
-//@ImportResource(value = {"classpath:providers.xml"})
+@ImportResource(value = {"classpath:providers.xml"})
 public class DemoApplication {
 
     public static void main(String[] args) {
