@@ -14,8 +14,8 @@ public class userConsumerController {
     UserService userService;
     @RequestMapping("/getConsumerUserName")
     public String getUserName(){
-//        return  userService.getUserName();
-        return  "";
+        return  userService.queryUserName("geshiying");
+//        return  "";
     }
 
 }

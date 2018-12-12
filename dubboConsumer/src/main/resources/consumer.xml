@@ -8,6 +8,6 @@
     <dubbo:application name="dubbo-consumer"></dubbo:application>
     <dubbo:registry address="zookeeper://127.0.0.1:2181"></dubbo:registry>
     <dubbo:protocol port="28080"></dubbo:protocol>
-    <dubbo:reference id="userService" interface="com.dubbo.api.service.UserService" url="127.0.0.1:20880" ></dubbo:reference>
+    <dubbo:reference id="userService" interface="com.dubbo.api.service.UserService" ></dubbo:reference>
 
 </beans>
